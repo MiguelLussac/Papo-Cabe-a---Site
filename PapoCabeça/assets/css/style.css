@@ -5,23 +5,30 @@
   font-family: "Poppins", sans-serif;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&family=Kablammo&family=Licorice&family=Satisfy&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1 {
+  font-family: 'Bitcount Single Ink', sans-serif;
+}
 :root {
-  --preto: #222831;
+  --vinho: #651f71;
   --cinza: #393e46;
-  --azul: #00adb5;
+  --azul: #506ee5;
   --branco: #eeeeee;
-  --pretao: #121212;
+  --roxoclaro: #1d0c20;
+  --roxo: #7037cd;
+  --ciano: #68b2f8;
 }
 
 body {
-  background-color: var(--pretao);
+  background-color: var(--roxoclaro);
   color: var(--branco);
   line-height: 1.6;
 }
 
 
 header {
-  background: var(--preto);
+  background: var(--vinho);
   display: flex;
   justify-content: space-between;
   align-items: center;
