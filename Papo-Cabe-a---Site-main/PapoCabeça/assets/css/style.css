@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ciano: #68b2f8;
+  --azul: #506ee5;
+  --lilas: #7037cd;
+  --roxo: #651f71;
+  --vinho: #1d0c20;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color: var(--vinho);
+  line-height: 1.6;
+}
+
+
+header {
+  text-align: center;
+  background: linear-gradient(135deg, var(--roxo), var(--lilas));
+  color: white;
+  padding: 40px 20px 80px;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+
+.imagem-da-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.imagem-da-logo img {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.titulo-que-acompanha-a-logo span {
+  display: block;
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+
+nav {
+  margin-top: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: var(--ciano);
+}
+
+.hero {
+  margin-top: 40px;
+}
+
+.hero h1 {
+  color: var(--ciano);
+  font-size: 2.6rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.hero h2 {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  color: #e0e0e0;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background: var(--vinho);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+main p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.proximos-episodios,
+.episodios-anteriores {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  background: #1d0c20;
+  border: 3px solid var(--lilas);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(80, 110, 229, 0.4);
+  padding: 30px;
+  color: #f3f3f3;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.proximos-episodios:hover,
+.episodios-anteriores:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 25px rgba(104, 178, 248, 0.6);
+}
+
+.proximos-episodios h2,
+.episodios-anteriores h2 {
+  color: var(--ciano);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.proximos-episodios h3,
+.episodios-anteriores h3 {
+  color: var(--lilas);
+  margin-bottom: 10px;
+}
+
+.proximos-episodios .episodio,
+.episodios-anteriores .episodio {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.proximos-episodios img,
+.episodios-anteriores img {
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(104, 178, 248, 0.3);
+  border: 2px solid var(--azul);
+  flex-shrink: 0;
+}
+
+.proximos-episodios p,
+.episodios-anteriores p {
+  flex: 1;
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.proximos-episodios a {
+  color: var(--ciano);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.proximos-episodios a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+  .proximos-episodios .episodio,
+  .episodios-anteriores .episodio {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .proximos-episodios img,
+  .episodios-anteriores img {
+    width: 90%;
+  }
+}
+
+
+a {
+  color: #0077cc;
+}
+
+a:hover {
+  color: #0057b7;
+}
+
+footer {
+  text-align: center;
+  background: var(--roxo);
+  color: white;
+  padding: 30px 20px;
+  border-radius: 30px 30px 0 0;
+  margin-top: 60px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1rem;
+  }
+
+  .imagem-da-logo {
+    flex-direction: column;
+  }
+
+  main {
+    padding: 15px;
+  }
+}
